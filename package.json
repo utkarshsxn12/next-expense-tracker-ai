@@ -13,10 +13,12 @@
     "@clerk/themes": "^2.2.55",
     "@prisma/client": "^6.11.1",
     "autoprefixer": "^10.4.22",
+    "chart.js": "^4.5.0",
     "next": "^15.2.3",
     "openai": "^6.9.1",
     "postcss": "^8.5.6",
     "react": "19.2.0",
+    "react-chartjs-2": "^5.3.1",
     "react-dom": "19.2.0"
   },
   "devDependencies": {
