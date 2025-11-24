@@ -9,8 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.24.0",
+    "@clerk/themes": "^2.2.55",
     "@prisma/client": "^6.11.1",
-    "next": "16.0.3",
+    "next": "^15.2.3",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
