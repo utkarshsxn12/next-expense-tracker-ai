@@ -12,19 +12,21 @@
     "@clerk/nextjs": "^6.24.0",
     "@clerk/themes": "^2.2.55",
     "@prisma/client": "^6.11.1",
+    "autoprefixer": "^10.4.22",
     "next": "^15.2.3",
+    "postcss": "^8.5.6",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.3",
     "prisma": "^6.11.1",
-    "tailwindcss": "^4",
+    "tailwindcss": "^4.1.17",
     "typescript": "^5"
   }
 }
