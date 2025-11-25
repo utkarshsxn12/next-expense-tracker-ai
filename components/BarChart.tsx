@@ -170,7 +170,7 @@ const BarChart = ({ records }: { records: Record[] }) => {
               item.categories.length > 1
                 ? `Categories: ${item.categories.join(', ')}`
                 : `Category: ${item.categories[0]}`;
-            return [`Total: $${item.amount.toFixed(2)}`, categoriesText];
+            return [`Total: ${item.amount.toFixed(2)}`, categoriesText];
           },
         },
       },
