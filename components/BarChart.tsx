@@ -201,7 +201,7 @@ const BarChart = ({ records }: { records: Record[] }) => {
       y: {
         title: {
           display: true,
-          text: 'Amount ($)',
+          text: 'Amount (₹)',
           font: {
             size: isMobile ? 12 : 16, // Smaller font on mobile
             weight: 'bold' as const,
@@ -214,7 +214,7 @@ const BarChart = ({ records }: { records: Record[] }) => {
           },
           color: isDark ? '#9ca3af' : '#7f8c8d', // Gray y-axis labels
           callback: function (value: string | number) {
-            return '$' + value; // Add dollar sign to y-axis labels
+            return '₹' + value; // Add dollar sign to y-axis labels
           },
         },
         grid: {

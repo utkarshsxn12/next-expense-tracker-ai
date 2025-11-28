@@ -80,10 +80,11 @@ const RecordItem = ({ record }: { record: Record }) => {
         <div className='space-y-2 sm:space-y-3'>
           <div className='flex items-center justify-between'>
             <span className='text-xs font-medium text-gray-500 dark:text-gray-400 tracking-wide uppercase'>
-              {new Date(record?.date).toLocaleDateString()}
+              {new Date(record?.date).toISOString().slice(0, 10)}
+
             </span>
             <span className='text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100'>
-              ${record?.amount.toFixed(2)}
+              ₹{record?.amount.toFixed(2)}
             </span>
           </div>
 

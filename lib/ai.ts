@@ -87,13 +87,20 @@ export async function generateExpenseInsights(
   }));
 
   const prompt = `Analyze the following expense data and provide 3-4 actionable financial insights.
-Return a JSON array of insights with this exact structure (and ONLY the JSON array, no other text):
+
+IMPORTANT:
+- Always use INR (₹) as the currency.
+- Never use $, USD, dollars, or any foreign currency.
+- If calculating totals, estimations, or savings, ALWAYS prefix values with ₹.
+- Keep amounts accurate and based on the provided data.
+
+Return a JSON array of insights with this exact structure (and ONLY the JSON array):
 
 [
   {
     "type": "warning|info|success|tip",
     "title": "brief title",
-    "message": "detailed insight message with specific numbers when possible",
+    "message": "detailed insight message using ₹ currency",
     "action": "actionable suggestion",
     "confidence": 0.0
   }
@@ -107,8 +114,10 @@ Focus on:
 2. Budget alerts (high spending areas)
 3. Money-saving opportunities
 4. Positive reinforcement for good habits
+5. All values must be represented in Indian Rupees (₹).
 
-Be concise. Return only valid JSON.`;
+Return only valid JSON.`;
+
 
   try {
     const completion = await openai.chat.completions.create({
@@ -206,13 +215,21 @@ export async function generateAIAnswer(
     date: e.date,
   }));
 
-  const prompt = `Based on the following expense data, answer this question concisely (2-3 sentences). Use concrete numbers from the data when possible. Return only the plain answer text, no JSON or extra commentary.
+  const prompt = `Based on the following expense data, answer this question concisely (2-3 sentences). 
+Use concrete numbers from the data when possible.
+
+IMPORTANT RULES:
+- Always use INR (₹) when mentioning money.
+- Never use $, USD, dollars, or any foreign currency.
+- If estimating totals or giving advice, ALWAYS use ₹.
+- Keep the response professional and financial-advisor style.
 
 Question: "${question}"
 
 Expense Data:
 ${JSON.stringify(expensesSummary, null, 2)}
-`;
+
+Return only the plain answer text, no JSON or extra formatting.`;
 
   try {
     const completion = await openai.chat.completions.create({
