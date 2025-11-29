@@ -123,7 +123,7 @@ const Footer = () => {
 
   <span className='w-1.5 h-1.5 bg-blue-500 dark:bg-cyan-400 rounded-full animate-pulse'></span>
 
-  Developed by Utkarsh
+  Developed by Utkarsh | Debugging by Kartikeya
 </div>
 
             {/* <div className='inline-flex items-center gap-2 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-3 py-1 rounded-full text-xs font-medium'>

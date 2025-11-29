@@ -2,11 +2,12 @@ import { SignIn } from "@clerk/nextjs";
 
 export default function SignInPage() {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center 
-      bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 
-      dark:from-blue-950 dark:via-blue-900 dark:to-blue-950
-      p-6">
-
+    <div
+      className="min-h-screen w-full flex items-center justify-center 
+      bg-gradient-to-br from-[#0A0F1F] via-[#0C152A] to-[#0A0F1F]
+      dark:from-[#05070C] dark:via-[#0A0F1F] dark:to-[#05070C]
+      p-6"
+    >
       <SignIn
         appearance={{
           elements: {

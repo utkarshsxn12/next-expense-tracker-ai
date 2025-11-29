@@ -34,7 +34,7 @@ const ContactPage = () => {
 
             {/* Email Button */}
             <a
-              href='mailto:support@expensetracker-ai.com'
+              href='mailto:utkarshsxn12@gmail.com'
               className='group relative overflow-hidden bg-gradient-to-r from-[#00AEEF] via-[#0096D1] to-[#007EAA] hover:from-[#0096D1] hover:via-[#007EAA] hover:to-[#006688] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold shadow-2xl hover:shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5'
             >
               <span className='relative z-10 flex items-center justify-center gap-2'>
@@ -98,9 +98,9 @@ const ContactPage = () => {
 
                 <p className='text-gray-600 dark:text-gray-400 mb-4'>We typically respond within 24 hours.</p>
 
-                <a href='mailto:support@expensetracker-ai.com'
+                <a href='mailto:utkarshsxn12@gmail.com'
                   className='text-blue-600 dark:text-blue-400 hover:underline font-medium'>
-                  support@expensetracker-ai.com →
+                  utkarshsxn12@gmail.com →
                 </a>
               </div>
             </div>
@@ -114,7 +114,7 @@ const ContactPage = () => {
 
                 <h3 className='text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100 mb-3'>Phone Support</h3>
 
-                <p className='text-gray-600 dark:text-gray-400 mb-4'>Speak directly with our team.</p>
+                <p className='text-gray-600 dark:text-gray-400 mb-4'>Speak directly with our team.<br />(not functional)</p>
 
                 <a href='tel:+11234567890'
                   className='text-blue-600 dark:text-blue-400 hover:underline font-medium'>
@@ -135,7 +135,7 @@ const ContactPage = () => {
                 <p className='text-gray-600 dark:text-gray-400 mb-4'>Visit us at our headquarters.</p>
 
                 <div className='font-medium text-blue-700 dark:text-blue-300'>
-                  123 AI Innovation St<br />Tech City, USA
+                  N/A
                 </div>
               </div>
             </div>

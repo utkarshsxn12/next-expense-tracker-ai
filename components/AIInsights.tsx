@@ -304,14 +304,33 @@ if (isLoading) {
                 </button>
               )}
 
-              {/* AI Answer */}
               {currentAnswer && (
-                <div className='mt-3 p-3 bg-white/70 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600'>
-                  <p className='text-xs text-gray-800 dark:text-gray-200'>
-                    {currentAnswer.answer}
-                  </p>
-                </div>
-              )}
+  <div className="mt-3 p-3 bg-white/70 dark:bg-gray-700/40 rounded-lg border border-gray-300/40 dark:border-gray-600 shadow-sm">
+
+    {/* Heading */}
+    <p className="text-xs font-semibold text-gray-700 dark:text-gray-300 mb-2 flex items-center gap-1">
+      🧠 AI Answer:
+    </p>
+
+    {/* Loading State */}
+    {currentAnswer.isLoading ? (
+      <div className="flex items-center gap-2 text-xs text-[#00AEEF] dark:text-blue-300">
+
+        {/* Spinning Loader */}
+        <div className="w-3 h-3 border-2 border-[#00AEEF]/40 border-t-[#00AEEF] rounded-full animate-spin"></div>
+
+        <span className="animate-pulse">Analyzing your spending...</span>
+      </div>
+    ) : (
+      /* Final Answer */
+      <p className="text-xs text-gray-800 dark:text-gray-200 whitespace-pre-line">
+        {currentAnswer.answer}
+      </p>
+    )}
+
+  </div>
+)}
+
             </div>
           );
         })}
